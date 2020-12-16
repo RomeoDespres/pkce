@@ -13,6 +13,7 @@ Examples
 import secrets
 import hashlib
 import base64
+from typing import Tuple
 
 
 def generate_code_verifier(length: int = 128) -> str:
@@ -40,7 +41,7 @@ def generate_code_verifier(length: int = 128) -> str:
     return code_verifier
 
 
-def generate_pkce_pair(code_verifier_length: int = 128) -> tuple:
+def generate_pkce_pair(code_verifier_length: int = 128) -> Tuple[str, str]:
     """Return random PKCE-compliant code verifier and code challenge.
 
     Parameters
