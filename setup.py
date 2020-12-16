@@ -11,13 +11,15 @@ setuptools.setup(
     author_email='despres.romeo@gmail.com',
     description='PKCE Pyhton generator.',
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type='text/markdown',
     url='https://github.com/RomeoDespres/pkce',
+    package_data={'pkce': ['py.typed']},
     packages=['pkce'],
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
     ],
     python_requires='>=3',
+    zip_safe=False
 )
