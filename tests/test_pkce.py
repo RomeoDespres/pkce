@@ -22,11 +22,11 @@ def test_generate_pkce_pair_too_short():
 
 
 def test_get_code_challenge():
-    abc = "abcdefghijklmnopqrstuvwxyz"
+    abc = 'abcdefghijklmnopqrstuvwxyz'
     challenge = pkce.get_code_challenge(abc + abc.upper())
-    assert challenge == "OWQpS2ZGE3mNGkd-uK0CEYtI0MVzjEJ2EyAvLtEjtfE"
+    assert challenge == 'OWQpS2ZGE3mNGkd-uK0CEYtI0MVzjEJ2EyAvLtEjtfE'
 
 
 def test_get_code_challenge_too_short():
     with pytest.raises(ValueError):
-        pkce.get_code_challenge("abcdef")
+        pkce.get_code_challenge('abcdef')
