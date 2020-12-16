@@ -13,6 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/RomeoDespres/pkce',
+    package_data={'pkce': ['py.typed']},
     packages=['pkce'],
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -21,4 +22,5 @@ setuptools.setup(
         'Typing :: Typed',
     ],
     python_requires='>=3',
+    zip_safe=False
 )
