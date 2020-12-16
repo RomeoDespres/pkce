@@ -6,7 +6,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='pkce',
-    version='1.0.1',
+    version='1.0.2',
     author='Roméo Després',
     author_email='despres.romeo@gmail.com',
     description='PKCE Pyhton generator.',
